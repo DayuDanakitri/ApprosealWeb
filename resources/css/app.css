@@ -1,12 +1,161 @@
-@import 'tailwindcss';
+/* =========================================
+   APPROSEAL - LOGIN PAGE
+========================================= */
 
-@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
-@source '../../storage/framework/views/*.php';
-@source "../**/*.blade.php";
-@source "../**/*.js";
-@source "../**/*.vue";
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+    background: #f4f6fa;
+}
 
-@theme {
-    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+.login-container {
+    width: 100%;
+    max-width: 440px;
+}
+
+.login-brand {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.brand-icon {
+    width: 58px;
+    height: 58px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 14px;
+    border-radius: 16px;
+    background: #172554;
+    color: #ffffff;
+    font-size: 29px;
+}
+
+.login-brand h1 {
+    font-size: 29px;
+    font-weight: 700;
+    color: #172554;
+    margin-bottom: 7px;
+    letter-spacing: -0.5px;
+}
+
+.login-brand p {
+    color: #64748b;
+    font-size: 13px;
+    margin: 0;
+}
+
+.login-card {
+    background: #ffffff;
+    border: 1px solid #e5e7eb;
+    border-radius: 14px;
+    padding: 34px;
+    box-shadow: 0 8px 30px rgba(15, 23, 42, 0.05);
+}
+
+.login-heading {
+    margin-bottom: 28px;
+}
+
+.login-heading h2 {
+    font-size: 23px;
+    font-weight: 700;
+    color: #172554;
+    margin-bottom: 7px;
+}
+
+.login-heading p {
+    color: #64748b;
+    font-size: 14px;
+    margin: 0;
+}
+
+.login-card .form-label {
+    font-size: 13px;
+    font-weight: 600;
+    color: #334155;
+    margin-bottom: 8px;
+}
+
+.login-input .input-group-text {
+    background: #ffffff;
+    border-color: #dce1e8;
+    color: #64748b;
+}
+
+.login-input .form-control {
+    height: 46px;
+    border-color: #dce1e8;
+    font-size: 14px;
+    box-shadow: none;
+}
+
+.login-input .form-control:focus {
+    border-color: #64748b;
+}
+
+.login-input:focus-within .input-group-text {
+    border-color: #64748b;
+}
+
+.login-input .form-control::placeholder {
+    color: #a0a8b5;
+}
+
+.password-toggle {
+    cursor: pointer;
+}
+
+.login-card .form-check-label {
+    color: #64748b;
+    font-size: 13px;
+}
+
+.login-card .form-check-input {
+    cursor: pointer;
+}
+
+.login-button {
+    height: 47px;
+    border: none;
+    border-radius: 7px;
+    background: #172554;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background 0.2s ease;
+}
+
+.login-button:hover {
+    background: #243b72;
+    color: #ffffff;
+}
+
+.login-footer {
+    text-align: center;
+    margin-top: 25px;
+}
+
+.login-footer p {
+    color: #64748b;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.login-footer span {
+    color: #94a3b8;
+    font-size: 11px;
+}
+
+@media (max-width: 480px) {
+    .login-card {
+        padding: 25px 20px;
+    }
+
+    .login-brand h1 {
+        font-size: 25px;
+    }
 }
