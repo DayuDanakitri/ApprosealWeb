@@ -19,6 +19,7 @@ class Document extends Model
         'title',
         'description',
         'reference_number',
+        'verification_token',
         'current_version',
         'application_status',
         'blockchain_status',
